@@ -1,0 +1,40 @@
+#project-menu {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #2f2f2f;
+  border-radius: 12px;
+}
+
+/* buttons */
+.project-select {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.project-select:hover {
+  background-color: #5c6cff;
+}
+
+/* active button (we’ll use this in JS) */
+.project-select.active {
+  background-color: #5c6cff;
+}
+
+#projects-container {
+  background-color: rgb(187, 187, 187);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+#projectDisplay {
+
+  border-radius: 12px;
+  margin-top: 15px;
+  padding: 20px;
+}

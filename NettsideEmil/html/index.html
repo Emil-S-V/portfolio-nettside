@@ -3,25 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>My Portfolio</title>
-
-  <!-- Link to CSS file -->
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <div id="page">
 
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+    <div id="toolbar">
+      <h2>Emil's portfolio</h2>
 
-  <main>
-    <h1>Welcome to my portfolio</h1>
-    <p>This is where your content goes.</p>
-  </main>
+      <a href="index.html">Hjem</a>
+      <a href="projects.html">Prosjekter</a>
+      <a href="https://www.linkedin.com/feed/">Linkedin</a>
+      <div id="music-dropdown">
+        <button id="music-menu">Lydinstillinger</button>
+        <div id="music-controls">
+            <button id="toggleMusic">Lyd på</button>
 
+            <label for="volumeSlider">Volum</label>
+            <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="0.5">
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <h1>Velkommen til Emil's Portfolio oversiks side</h1>
+      <p>Her vil du finne relevant informasjon om meg. Dette gjelder alt i fra hvem jeg er, hva jeg brennerfor, eller hva jeg har gjort i forkant</p>
+    </div>
+
+  </div>
+    <script src="../scripts/sound.js"></script>
 </body>
 </html>

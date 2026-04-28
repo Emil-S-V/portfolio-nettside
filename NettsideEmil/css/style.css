@@ -3,28 +3,65 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Toolbar */
-header {
-  background-color: #333;
+#page {
+  display: flex;
+  min-height: 100vh;
+}
+
+#toolbar {
+  width: 220px;
+  background-color: #303030;
   color: white;
-  padding: 15px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-nav a {
-  color: white;
-  margin-right: 15px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main content */
-main {
-  margin-top: 70px;
   padding: 20px;
+  border: #303030;
+}
+
+#toolbar h2 {
+  margin-top: 0;
+}
+
+#music-dropdown {
+  margin-top: auto;
+  position: relative;
+}
+
+#music-controls {
+  display: none;
+  background-color: #444;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+#music-controls.show {
+    display: block;
+}
+
+#music-controls button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#volumeSlider {
+    width: 100%;
+}
+
+
+#toolbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#toolbar a:hover {
+  background-color: #505050;
+}
+
+#main {
+  flex: 1;
+  padding: 40px;
+  background-color: #f4f4f4;
 }
