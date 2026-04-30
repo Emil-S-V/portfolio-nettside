@@ -3,6 +3,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#main {
+  background-color: #f5f7fb;
+}
+
 #page {
   display: flex;
   min-height: 100vh;
@@ -10,7 +14,7 @@ body {
 
 #toolbar {
   width: 220px;
-  background-color: #303030;
+  background-color: #1e1e2f;
   color: white;
   padding: 20px;
   border: #303030;
@@ -64,4 +68,8 @@ body {
   flex: 1;
   padding: 40px;
   background-color: #f4f4f4;
+}
+
+a {
+  color: #5c6cff;
 }
